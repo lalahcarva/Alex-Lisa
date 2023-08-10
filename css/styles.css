@@ -1,0 +1,659 @@
+/* Global resets */
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100vh;
+}
+
+body {
+    margin: 0;
+    text-align: center;
+    font-size: 2em; /* 1em = 16px */
+    font-family: 'Lora', serif;
+}
+
+header {
+    background-color: #111821;
+    color: white;
+}
+
+/* Menu styles */
+
+/* Flex parent container */
+
+.container {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 15px 0 10px 0;
+}
+
+/* Flex parent and child */
+
+.headernav {
+    flex-grow: .25;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.headernav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    font-family: 'Amatic SC', cursive;
+    padding: 0 50px 0 50px;
+}
+
+.headernav a:hover {
+    color: #f9b25c;
+    transition: 0.5s;
+}
+
+.logoimg {
+    width: 200px;
+}
+
+.logoimg:hover {
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+
+/* HOME page styles */
+
+.banner {
+    background-image: url(../images/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 30px;
+    height: 80vh;
+}
+
+.bannerheadline {
+    justify-content: center;
+    font-size: 1.6em;
+    color: white;
+    margin: 0;
+    background-color: #111821a2;
+    font-family: 'Amatic SC', cursive;
+    width: 30%;
+}
+
+.singularitygraphic {
+    width: 330px;
+}
+
+#mainstyle {
+    background-color: #e0e1d9;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+}
+
+h3 {
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    margin-top: 50px;
+    font-size: 2em;
+    font-family: 'Amatic SC', cursive;
+}
+
+.section2style {
+    width: 70%;
+    height: 80%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+    align-items: center;
+    font-size: 0.9em;
+}
+
+.box{
+    width: 30%;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    color: brown;
+    font-weight: 500; /* I learned this on https://www.w3schools.com/cssref/pr_font_weight.asp */
+    font-style: italic;
+}
+
+.releaseimg {
+    width: 100%;
+    border-radius: 250px 250px 0 0;
+}
+
+.releaseimg:hover{
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+/* CONTACT FORM page (on footer) and HOME NEWSLETTER styles */
+
+.newsletterstyle{
+    background-color: #898886;
+    padding: 70px 0 40px 0;
+    font-family: 'Lora', serif;
+}
+
+.newsletterbox {
+    width: 60%;
+    margin: auto;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.formstyle {
+    background-color: #e0e1d9;
+    padding: 40px;
+    width: 100%;
+}
+
+
+iframe, form {
+    margin-bottom: 50px;
+}
+
+form {
+    width: 70%;
+    font-family: 'Lora', serif;
+    font-size: 0.9em;
+    margin: auto;
+}
+
+.labelcontact {
+    justify-content: center;
+    display: flex; 
+    font-size: .75em;
+}
+
+.labelnews {
+    font-size: .85em;
+}
+
+input[type=text], input[type=email], input[type=tel], textarea{
+    width: 90%;
+    padding: 10px;
+    margin: 6px 0 16px 0 ;
+    border: none;
+    border-radius: 5px;
+}
+
+
+select {
+    background-color: white;
+    font-size: 1em;
+    height: auto;
+    margin: 6px 0 16px 0 ;
+    padding: 8px 18px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+}
+
+input[type=submit]{
+    background-color: #111821;
+    font-family: 'Lora', serif;
+    color: white;
+    font-size: 0.75em;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 10px;
+}
+
+input[type=submit]:hover{
+    background-color: #f9b25c;
+    transition: 0.5s;
+}
+
+/* FOOTER styles */
+
+footer {
+    flex-grow: .25;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111821;
+    color: white;
+}
+
+.footeritems {
+    align-items: center;
+    width: 70%;
+    justify-content: space-around;
+    text-decoration: none;
+}
+
+.footernavigationimgs {
+    font-family: 'Amatic SC', cursive;
+    width: 70%;    
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+}
+
+.footernavigation {
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    font-family: 'Amatic SC', cursive;
+    width: 30%;    
+}
+
+.contact {
+    text-decoration: none;
+    color: white;
+}
+
+.contact:hover {
+    color: #f9b25c;
+    transition: 0.5s;
+}
+
+.logoimg {
+    width: 200px;
+}
+
+/* SOCIAL MEDIA Icons styles */
+
+.socialmediaimg {
+    width: 30px;
+}
+
+.socialmediaimg:hover {
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+/* About us page style */
+
+.aboutcontent {
+    background-color: #898886;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding: 0 20%;
+}
+
+.aboutduotext {
+    width: 50%;
+    font-size: .5em; 
+    padding: 0 30px 0 0;
+}
+
+.duoimage { 
+    width: 400px;
+}
+
+h4 {
+    color: brown;
+    font-weight: 700; /* I learned this on https://www.w3schools.com/cssref/pr_font_weight.asp */
+    font-style: italic;
+}
+
+.aboutbox {
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+.aboutlisa {
+    background-color: #e0e1d9;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding: 0 20%;
+}
+
+
+.aboutlisatext {
+    font-size: .5em; 
+}
+
+.aboutalex {
+    background-color: #cccac6;
+    width: 100%;
+    margin: 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding: 0 20%;
+}
+
+.aboutalextext {
+    font-size: .5em; 
+}
+
+.lisaaleximage {
+    padding: 30px;
+    width: 300px;
+    border-radius: 250px 250px 0 0;    
+}
+
+/* Merch page style */
+
+h1 {
+    background-color: #898886;
+    color: white;
+    font-size: 2em;
+    font-family: 'Amatic SC', cursive;
+    padding: 50px;
+    margin: 0;
+    margin: auto;
+}
+
+#contentstyle {
+    background-color: #cccac6;
+    width: 100%;
+}
+
+.contentbox {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    justify-content: center;
+    padding: 33px;
+}
+
+.gallery {
+    width: 350px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+
+.gallery:hover {
+    opacity: 0.5;
+    transition: 1s;
+}
+
+.gallery p {
+    font-size: 0.8em;
+    font-family: 'Lora', serif;
+    padding: 10px 0 40px 0;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+.gallery img {
+    width: 350px;
+}
+
+
+
+/* ALBUM PAGE styles */
+
+.albumbanner {
+    background-image: url('../images/album_images/record_album.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: #898886;
+    height: 480px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.albumbannercontentsmall {
+    font-family: 'Lora', serif;
+    font-size: 0.85em;
+    margin-right: 310px;
+    margin-bottom: -30px;
+}
+
+.albumbannercontent {
+    font-family: 'Lora', serif;
+    font-size: 1.2em;
+    margin-right: 310px;
+}
+
+.videocontent {
+    background-color: #898886;
+    height: 1500px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    font-family: 'Amatic SC', cursive;
+}
+
+.trackliststyle {
+    width: 450px;
+    padding-bottom: 80px;
+}
+
+.tracks {
+    background-color: #cccac6cb; 
+    border-radius: 20px;
+    font-style: italic;
+    font-size: 0.7em;
+    padding: 10px;
+    margin: 10px;
+}
+
+#tablemodule {
+    background-color: #e0e1d9;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+table {
+    background-color: #887262b4;
+    border-radius: 10px;
+    font-style: italic;
+    font-size: 0.7em;
+    padding: 10px;
+    margin: 10px;
+}
+
+.tablestyle {
+    width: 600px;
+    text-align: center;
+    padding: 10px;
+}
+
+/* I learned how to do this on https://www.w3schools.com/howto/howto_css_table_zebra.asp */
+tr:nth-child(odd) {
+    background-color: #e0e1d96e;
+}
+
+.h3yellow {
+    margin: 0;
+    background-color: #f9b25cbb;
+    padding-top: 50px;
+}
+
+.trackpreview {
+    background-color: #f9b25cbb;
+    height: 255px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.trackbox {
+    display: flex;
+    flex-direction: column;
+    font-style: italic;
+    font-size: 0.7em;
+}
+
+
+/* Media Queries */
+
+
+@media only screen and (max-width:680px){ 
+
+        /* MENU AND FOOTER NAV */
+
+    .container {
+        width: 100%;
+        flex-direction: column;
+    }
+    
+    nav {
+        flex-direction: column;
+    }
+    nav a {
+        flex-direction: column;
+    }
+    .footernavigationimgs {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    /* ABOUT US PAGE */ 
+
+    .contentbox {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .trackpreview {
+        background-color: #f9b25cbb;
+        height: 255px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .albumbanner {
+        background-image: url('../images/album_images/record_album_small.jpg');
+        background-color: #d7d6d4;
+        padding-top: 300px;
+    }
+
+    .albumbannercontentsmall {
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .albumbannercontent {
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+
+}
+
+@media only screen and (max-width:1000px) {
+
+        /* HOME PAGE */
+    .mainstyle {
+        flex-basis: 100%;
+        flex-direction: column;
+    }
+
+    .bannerheadline {
+        font-size: 1em;
+        color: #cccac6;
+        text-shadow: none;
+        margin-bottom: -15px;
+    }
+
+    .section2style {
+        flex-direction: column;
+    }
+
+    .box{
+        width: 70%;
+    }
+
+        /* ABOUT US PAGE */
+    .aboutcontent {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    .aboutduotext {
+        flex-direction: column;
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0;
+    }
+    .aboutlisa {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .aboutalex {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .aboutlisatext {
+        padding: 0;
+    }
+    .aboutalextext {
+        padding: 0;
+    }
+
+
+
+}
+
+@media only screen and (max-width:1300px) {
+
+    /* ALBUM page  */
+
+    .albumbanner {
+            background-color: #d7d6d4;
+            padding-top: 200px;
+    }
+}
